@@ -5,8 +5,10 @@ provider "aws" {
 }
 
 variable "region" {
-  default = "us-east-1"
+  default     = "us-east-1"
+  description = "AWS region"
 }
+
 
 variable "access_key" {
   default = ""
