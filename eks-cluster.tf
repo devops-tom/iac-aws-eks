@@ -18,7 +18,7 @@ module "eks" {
       additional_userdata           = "echo foo bar"
       additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
       asg_desired_capacity          = 2
-    },
+    }
 }
 
 data "aws_eks_cluster" "cluster" {
